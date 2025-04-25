@@ -1,5 +1,5 @@
 {
-  "name": "unit-ai-1-llm",
+  "name": "cover-bot",
   "version": "1.0.0",
   "description": "",
   "main": "./client/index.ts",
