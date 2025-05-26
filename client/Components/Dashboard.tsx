@@ -14,6 +14,7 @@ const Dashboard = () => {
     e.preventDefault();
     setLoading(true);
     setError('');
+    //clears inputgit
     setCoverLetter('');
     setNaturalLanguageQuery('');
    
