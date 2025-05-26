@@ -15,6 +15,7 @@ const Dashboard = () => {
     setLoading(true);
     setError('');
     setCoverLetter('');
+    setNaturalLanguageQuery('');
    
     try {
       const coverLetterResponse = await fetch('/api', {

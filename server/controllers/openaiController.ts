@@ -25,21 +25,67 @@ const task = `
         The user content will be a job description.  
         1. read through the job description and identify the target audience, key skills and company values
         2. read through the resume provided below and find relevant experience to the job description
-        3. format a cover letter for the candidate in the following structure:
+        3. Keep it concise and under 250 word and Avoid repeating resume.
+        4. format a cover letter for the candidate in the following structure:
 
         Dear [target audience],
 
         cover letter content
 
         All Best, 
-        Alex McPhail
-        281-731-9656
-        mcphail.alex@gmail.com
+        Ragad Mohammed
+        619-792-8081
+        r1mohamm@gmail.com
 `;
 
 // Read resume from file
-const resumeFilePath = path.join(__dirname, '../data/resume.doc');
-const resume = fs.readFileSync(resumeFilePath, 'utf-8');
+// const resumeFilePath = path.join(__dirname, '../data/resume.docx');
+const resume = `RAGAD MOHAMMED r1mohamm@gmail.com
+(619)792-8081
+SOFTWARE ENGINEER
+linkedin.com/in/ragad/
+github.com/ragad-mohammed
+TECHNICAL SKILLS
+Languages & Technologies: JavaScript (ES6+), TypeScript, Python, HTML/CSS, React (Hooks, Router, Redux), Node.js, Express.js,
+Mongoose, Jest, Git, Webpack, Docker, AWS, MongoDB, SQL
+Skills: Wireframing, Test-Driven Development (TDD), RESTful APIs, OAuth
+PROFESSIONAL EXPERIENCE
+Software Engineer at Reactime
+2024 — Present
+Leveraged React DevTools Global Hook to navigate the React Fiber tree, capturing state and render time with throttled
+updates. Implemented listeners and Chrome local storage to enable time-travel debugging and performance monitoring.
+Developed a React component to display context providers and consumers from useContext hook, utilizing recursive data
+parsing and custom JSON visualization, increasing development speed and productivity, reducing debugging time by 50%.
+Deployed Webpack to bundle a Chrome Extension build, managing multiple entry points and complex dependencies such as
+TSX and JSX transpiling for uglifying and minifying code for an optimized, production-ready package for deployment.
+Optimized unit and integration tests using Jest, including scenarios such as missing React DevTools, and handling of port
+disconnection events, enhancing reliability and functionality by achieving 85% test coverage across key components.
+Engineer at QuidelOrtho, General Atomics
+2017 — 2024
+Automated the extraction and aggregation of measurement data from excel files by developing a Python script that utilized
+Pandas and OS libraries for data manipulation, streamlining the analysis process and reducing processing time by 80%.
+Programmed an automated measurement system using LabVIEW to enhance precision and efficiency, enabling seamless
+integration into a larger system for improved quality control, increasing production accuracy by 15%.
+Applied data analysis software to analyze production inefficiencies, and implement solutions, improving throughput by 25% and
+achieving $100K in annual cost savings.
+ENGINEERING PROJECTS
+BetterReads | Book Tracking App
+Engineered a modular and flexible backend server using Express, implementing RESTful architecture to handle requests, query
+databases, and send appropriate responses. Designed middleware for efficient request routing, body parsing, API data
+fetching, and persistence through chaining, ensuring a fast, minimal, and scalable server structure.
+Designed a relational database schema in PostgreSQL, including user, book, and many-to-many relationship tables, with
+foreign key constraints and indexed columns to ensure data integrity, scalability, and efficient querying.
+Built a responsive React component using Material-UI to display a grid of book cards, leveraging styled typography, consistent
+image rendering, and flexible layouts to create a visually appealing, user-friendly interface that enhances accessibility.
+EDUCATION
+University of California, San Diego
+Master of Science in Engineering
+Bachelor of Science in Chemical Engineering | Magna Cum Laude
+TALKS/ PUBLICATIONS
+Tech Talk | Kubernetes in Artificial Intelligence and Machine Learning Processes
+Medium | Reactime Reimagined: A Major Leap Forward in React Debugging
+INTERESTS
+Solo Traveling (Colosseum, Machu Picchu, Petra, Chichén Itzá) | Yoga and Meditation Retreats | Coffee Enthusiast`
 
 const rules = `
   1. output format should be in markdown formatted left justified, single spaced with 2 lines between paragraphs and after the salutation. Like a letter 
